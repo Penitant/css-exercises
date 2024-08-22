@@ -26,3 +26,25 @@ img {
 }
 
 /* Solution */
+
+.title {
+  padding: 32px;
+}
+.title-wrapper,
+.plant-wrapper {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.plant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 52px;
+  width: 200px;
+}
+
+.text {
+  text-align: center;
+}
