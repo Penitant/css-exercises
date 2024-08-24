@@ -27,3 +27,93 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* Solution */
+
+/* All the flex Containers : */
+
+.header,
+.column-body,
+.content-wrapper,
+.sidebar,
+.footer,
+.content,
+.card,
+ul {
+  display: flex;
+}
+
+/* Header Modifications : */
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+  align-items: center;
+}
+
+/* Sidebar modifications : */
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+
+/* Main Content Modifications */
+
+.column-body {
+  flex-grow: 1;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+}
+
+.content {
+  padding-top: 48px;
+  padding-left: 28px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card {
+  padding: 10px;
+  text-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+
+/* Footer Modifications */
+
+.footer {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hyperlink modifications :*/
+
+ul {
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 24px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+a:hover {
+  color:#ffffff; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
