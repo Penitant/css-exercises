@@ -24,3 +24,90 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* Solution */
+
+/* Links, Header, Footer */
+
+a {
+  color: #3f3e3e;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#3f3e3e; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
+
+.header,
+.left-links,
+.right-links,
+.footer,
+.footer_links,
+.content,
+.content-wrapper,
+.buttons,
+body {
+  display: flex;
+}
+
+.header,
+.footer {
+  justify-content: space-between;
+  padding: 8px;
+  margin: 0px;
+}
+
+.footer {
+  flex-direction: column;
+  margin-top: auto;
+  background-color: #eeeeee;
+  align-content: center;
+  flex-shrink: 0;
+}
+
+.footer_links {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-links,
+.right-links {
+  gap: 16px;
+}
+
+/* Main Content */
+
+body {
+  flex-direction: column;
+}
+.content {
+  justify-content: center;
+  align-content: center;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.content-wrapper {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.buttons {
+  gap: 16px;
+}
+
+button {
+  padding: 8px;
+}
+
+/* To Remove bullet points */
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
